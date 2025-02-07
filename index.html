@@ -86,9 +86,10 @@
             text-align: center;
         }
         .box img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 100%; /* ইমেজ পুরো চওড়া নেবে */
+            height: 200px; /* নির্দিষ্ট উচ্চতা */
+            object-fit: cover; /* অতিরিক্ত অংশ কেটে নেবে */
+            border-radius: 10px; /* ছবির কোণ গোলাকার */
         }
         .shop-now {
             position: absolute;
@@ -131,18 +132,22 @@
     <div class="dashboard">
         <div class="content">
             <div class="box">
+                <!-- প্রথম ইমেজ -->
                 <img src="https://via.placeholder.com/200" alt="Product 1">
                 <a href="#" class="shop-now">Shop Now</a>
             </div>
             <div class="box">
+                <!-- দ্বিতীয় ইমেজ -->
                 <img src="https://via.placeholder.com/200" alt="Product 2">
                 <a href="#" class="shop-now">Shop Now</a>
             </div>
             <div class="box">
+                <!-- তৃতীয় ইমেজ -->
                 <img src="https://via.placeholder.com/200" alt="Product 3">
                 <a href="#" class="shop-now">Shop Now</a>
             </div>
             <div class="box">
+                <!-- চতুর্থ ইমেজ -->
                 <img src="https://via.placeholder.com/200" alt="Product 4">
                 <a href="#" class="shop-now">Shop Now</a>
             </div>
