@@ -3,98 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taka Gor BD - Shop Now</title>
+    <title>Taka Gor BD - Earn Money Online</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f9;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
+            text-align: center;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            background-color: #45a049;
-        }
-        .products {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        .sub-header {
+            background-color: #0056b3;
+            color: #f9f9f9;
             padding: 10px;
-            width: 200px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
             text-align: center;
         }
-        .product img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .product button {
-            margin-top: 10px;
-            background-color: #4CAF50;
+        a {
+            text-decoration: none;
             color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        .marquee {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
             border-radius: 5px;
         }
-        .product button:hover {
-            background-color: #45a049;
+        .marquee span {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .dashboard {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .box {
+            background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .box h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #007bff;
+        }
+        .box p {
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            margin-top: 30px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
-        Taka Gor BD - Shop Now
+        Taka Gor BD
     </header>
-    <nav>
-        <a href="https://nahidxsr.github.io/Taka-Gor-BD/">Sign Up</a>
-        <a href="https://nahidxsr.github.io/login/">Log In</a>
-    </nav>
-    <div class="products">
-        <div class="product">
-            <img src="https://images.pexels.com/photos/808066/pexels-photo-808066.jpeg?cs=srgb&dl=pexels-pixabay-808066.jpg&fm=jpg" alt="Bluetooth Speaker">
-            <p>High-Quality Bluetooth Speaker</p>
-            <button>Shop Now</button>
+    <div class="sub-header">
+        টাকা করে ইনকাম করুন এবং রেফার করে আয় করুন
+    </div>
+    <div class="marquee">
+        <span>আপনার ইনকাম শুরু করুন আজই! | রেফার করে আয় করুন! | কাজ করুন, টাকা তুলুন এবং মজা করুন!</span>
+    </div>
+    <div class="dashboard">
+        <h2>Earn Money by Referring Others!</h2>
+        <!-- Login and Signup Buttons -->
+        <div>
+            <a href="https://nahidxsr.github.io/Taka-Gor-BD/">Sign Up</a>
+            <a href="https://nahidxsr.github.io/login/">Log In</a>
         </div>
-        <div class="product">
-            <img src="https://images.pexels.com/photos/339465/pexels-photo-339465.jpeg?cs=srgb&dl=pexels-pixabay-339465.jpg&fm=jpg" alt="Bluetooth Speaker">
-            <p>Portable Bluetooth Speaker</p>
-            <button>Shop Now</button>
-        </div>
-        <div class="product">
-            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-pixabay-90946.jpg&fm=jpg" alt="DSLR Camera">
-            <p>Professional DSLR Camera</p>
-            <button>Shop Now</button>
-        </div>
-        <div class="product">
-            <img src="https://images.pexels.com/photos/279906/pexels-photo-279906.jpeg?cs=srgb&dl=pexels-pixabay-279906.jpg&fm=jpg" alt="Camera Lens">
-            <p>Camera Lens</p>
-            <button>Shop Now</button>
+        <div class="content">
+            <div class="box">
+                <h3>Referrals</h3>
+                <p>Total Referrals: 50</p>
+                <p>Bonus Earned: $25</p>
+            </div>
+            <div class="box">
+                <h3>Earnings</h3>
+                <p>Today's Earnings: $5</p>
+                <p>Total Earnings: $120</p>
+            </div>
+            <div class="box">
+                <h3>Tasks</h3>
+                <p>Completed Tasks: 15</p>
+                <p>Pending Tasks: 5</p>
+            </div>
+            <div class="box">
+                <h3>Withdrawals</h3>
+                <p>Last Withdrawal: $50</p>
+                <p>Pending Withdrawal: $10</p>
+            </div>
         </div>
     </div>
+    <footer>
+        &copy; 2025 Taka Gor BD | All Rights Reserved.
+    </footer>
 </body>
 </html>
